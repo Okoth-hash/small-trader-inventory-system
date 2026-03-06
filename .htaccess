@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+<FilesMatch "\.(sql|json|toml|lock|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore uploaded images
+assets/images/uploads/
+
+# Ignore composer vendor folder if it exists
+vendor/
