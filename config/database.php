@@ -1,11 +1,11 @@
 <?php
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "kelly");
-define("DB_NAME", "small_trader_db");
+$host   = getenv('MYSQLHOST')     ?: 'sql213.infinityfree.com';
+$user   = getenv('MYSQLUSER')     ?: 'if0_41321571';
+$pass   = getenv('MYSQLPASSWORD') ?: 'Okothrobin1234';
+$dbname = getenv('MYSQLDATABASE') ?: 'if0_41321571_trader';
+$port   = (int)(getenv('MYSQLPORT') ?: 3306);
 
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

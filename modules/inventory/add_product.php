@@ -1,6 +1,6 @@
 <?php
 session_start();
-define('BASE_URL', '/small-trader-inventory-system/');
+define('BASE_URL', '/');
 $pageTitle = 'Add Product';
 require_once '../../config/database.php';
 require_once '../../includes/header.php';
